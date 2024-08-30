@@ -1,0 +1,187 @@
+body{
+    font-family: "Gabarito", system-ui;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.Navebar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    border-bottom: solid black 1px;
+    align-items: center;
+}
+
+.Navebar-1{
+    color: #A435F0;
+}
+
+.Navebar-2{
+    display: flex;
+    padding: 10px;
+    border: solid black 2px;
+    border-radius: 30px;
+    width: 60%;
+    gap: 15px;
+    
+    
+}
+
+.Navebar-2 input{
+    border: none;
+    width: 50%;
+    gap: 10px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.Navebar-2 input:focus{
+    outline: none;
+}
+
+.Navebar-3{
+    display: flex;
+    gap: 15px;
+}
+
+.title-1{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: solid black 1px;
+
+}
+
+.title-1 p{
+    background-color: #A435F0;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    
+   
+}
+
+.title-1 P:hover{
+    background-color:transparent;
+    color:black;
+    cursor: pointer;
+    border: solid #A435F0 1px;
+    transform:1s;
+}
+
+.image-title img{
+    width: 100%;
+
+}
+
+.Recommended{
+    padding: 20px;
+}
+
+.Recommended-1{
+    padding-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Recommended-1 img{
+    width: 250px;
+    height: 210px;
+}
+
+
+.topics-recommended{
+    padding: 10px;
+}
+.topics-recommended-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+   
+}
+
+.topics-recommended-1 P{
+    border: solid black 1px;
+    padding: 10px;
+    flex-basis: 25%; 
+    border-radius: 10px;
+   
+}
+
+.topics-recommended-1 p:hover{
+    color: #A435F0;
+    background-color: transparent;
+}
+
+.most{
+    padding: 10px;
+}
+
+.most-1__one,.most-2__one{
+    padding-top: 10px;
+}
+
+.most-1{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.most-1 img{
+    width: 250px;
+    height: 210px;
+}
+
+.most-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.most-2 img{
+    width: 250px;
+    height: 210px;
+}
+
+.footer{
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.footer__one{
+    display: flex;
+    gap: 10px;
+}
+
+.footer__one p{
+    margin: 20px;
+}
+
+.footer__two{
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__one p:hover {
+    cursor: pointer;
+    color: #A435F0;
+    
+}
+
+.Navebar-3 p:hover{
+    color: #A435F0;
+    border-bottom: solid #A435F0 1px;
+
+}
