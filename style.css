@@ -15,6 +15,9 @@ body{
     gap: 10px;
     border-bottom: solid black 1px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .Navebar-1{
@@ -28,6 +31,8 @@ body{
     border-radius: 30px;
     width: 60%;
     gap: 15px;
+    background-color: transparent;
+    
     
     
 }
@@ -47,6 +52,27 @@ body{
 .Navebar-3{
     display: flex;
     gap: 15px;
+}
+
+.Leaning{
+    position: relative;
+    cursor: pointer;
+}
+
+.Leaning__popup{
+    position: absolute;
+    padding: 10px;
+    border: solid black 1px;
+    background-color: white;
+    color: black;
+    width: 100px;
+    top: 150%;
+    right: 0;
+    display: none; 
+}
+
+.Leaning:hover .Leaning__popup{
+    display:block;
 }
 
 .title-1{
@@ -77,6 +103,21 @@ body{
 .image-title img{
     width: 100%;
 
+}
+
+.sale-image{
+    position: relative;
+}
+
+
+.sale-image__1{
+    background-color: white;
+    border: solid black 1px;
+    padding: 25px;
+    width: fit-content;
+    position: absolute;
+    top:25%;
+    left: 10%;
 }
 
 .Recommended{
