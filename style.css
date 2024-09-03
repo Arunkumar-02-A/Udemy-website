@@ -8,6 +8,8 @@ body{
 
 }
 
+/* Navebar */
+ 
 .Navebar{
     display: flex;
     justify-content: space-between;
@@ -54,6 +56,12 @@ body{
     gap: 15px;
 }
 
+.Navebar-4{
+    display: none;
+}
+
+/* My Leaning */
+
 .Leaning{
     position: relative;
     cursor: pointer;
@@ -75,6 +83,8 @@ body{
 .Leaning:hover .Leaning__popup{
     display:block;
 }
+
+/* Title */
 
 .title-1{
     display: flex;
@@ -109,17 +119,22 @@ body{
     width: 100%;
 
 }
+/* Sale Image */
 
 .sale-image{
     position: relative;
 }
 
+.sale-image img{
+    width: 100%;
+}
 
 .sale-image__1{
+    
+    width: 35%;
     background-color: white;
     border: solid black 1px;
-    padding: 25px;
-    width: fit-content;
+    padding: 2%;
     position: absolute;
     top:25%;
     left: 10%;
@@ -142,22 +157,34 @@ body{
     }
 }
 
+/* .Recommended */
+
 .Recommended{
     padding: 20px;
+    
 }
 
 .Recommended-1{
-    padding-top: 10px;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-.Recommended-1 img{
-    width: 250px;
-    height: 210px;
+.Recommended-1__one{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 10px;
+    
 }
 
+.Recommended-1__one img{
+    height: 50%;
+    width: 100%;
+}
+
+
+/* topics recommended */
 
 .topics-recommended{
     padding: 10px;
@@ -184,36 +211,31 @@ body{
     background-color: transparent;
 }
 
+/* Most Popular */
+
 .most{
     padding: 10px;
 }
 
-.most-1__one,.most-2__one{
-    padding-top: 10px;
-}
-
 .most-1{
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-
-.most-1 img{
-    width: 250px;
-    height: 210px;
-}
-
-.most-2{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    margin-top: 10px;
 }
 
-.most-2 img{
-    width: 250px;
-    height: 210px;
+.most-1__one{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 10px;
 }
+
+.most-1__one img{
+    height: 50%;
+    width: 100%;
+}
+
+/* Footer */
 
 .footer{
     padding: 30px;
@@ -247,4 +269,36 @@ body{
     color: #A435F0;
     border-bottom: solid #A435F0 1px;
 
+}
+
+/* Media Queries */
+
+@media screen and (max-width:800px){
+    body{
+        font-size:10px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .most-1__one{
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .Recommended-1__one{
+        flex-basis: 40%;
+    }
+    .title-1{
+        display: none;
+    }
+    .Navebar-2,.Navebar-3{
+        display: none;
+    }
+    .Navebar-4{
+        display: block;
+    }
+    .sale-image__1{
+        top: 10%;
+    }
 }
